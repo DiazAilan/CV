@@ -6,18 +6,17 @@
 		  			Información de Contacto
 				</h2>
 				<p>
-					<i class="fa fa-fw fa-map-marker"></i> Ciudad: Ciudad Autónoma de Buenos Aires, Buenos Aires, Argentina
+					<i class="fa fa-fw fa-lg fa-map-marker"></i> Ciudad: Ciudad Autónoma de Buenos Aires, Buenos Aires, Argentina
 					<br>
-					<i class="fa fa-fw fa-mobile"></i> Número de teléfono: 385-580-1837
+					<i class="fa fa-fw fa-lg fa-mobile"></i> Número de teléfono: 385-580-1837
 					<br>
-					<i class="fa fa-fw fa-envelope"></i> Correo electrónico: diaz.ailan.gonzalo@gmail.com
+					<i class="fa fa-fw fa-lg fa-envelope"></i> Correo electrónico: diaz.ailan.gonzalo@gmail.com
 				</p>
 			</div>
 		</div>
 		<div class="col-xs-6 col-sm-3 blue-bg profile-cover padding">
 			<img src="assets/img/profile-pic.jpg" class="img-responsive img-circle center-block shadow-2">
 			<h3 class="text-center blue-bg">Gonzalo Díaz Ailán<br><small class="blue-bg">Co-fundador de NOTIBEACON<br>Desarrollador front-end</small></h3>
-			<br>
 		</div>
 	</div>
 	<div class="row light-bg container padding">
@@ -34,23 +33,27 @@
 				<h2 class="light-dash">
 		  			Experiencia
 				</h2>
+				<br>
 				<div class="row">
 					<div class="col-xs-2">
 						<img src="assets/img/shopear-icon.jpg" class="img-circle shadow-2 full-width margin-top-20">
 					</div>
 					<div class="col-xs-10">
-						<h3><u>Shopear</u></h3>
+						<h3><b>Shopear</b></h3>
+						<h4><b>Junio de 2015 - actualidad | Buenos Aires, Argentina</b></h4>
 						<p class="text-justify">Shopear fue una de las primeras empresas aceleradas por "WAYRA" del "Grupo Telefónica".<br>
 						Su producto principal es una plataforma que mezcla un e-comerce tradicional con una red social.<br>
 						En Shopear, trabajé en la creación y desarrollo del front-end de la versión 2.0 del sitio web, versión que actualmente se puede ver en "Shopear.com".</p>
 					</div>
 				</div>
+				<br>
 				<div class="row">
 					<div class="col-xs-2">
 						<img src="assets/img/notibeacon-icon.jpg" class="img-circle shadow-2 full-width margin-top-20">
 					</div>
 					<div class="col-xs-10">
-						<h3><u>NOTIBEACON</u></h3>
+						<h3><b>NOTIBEACON</b></h3>
+						<h4><b>Junio de 2015 - actualidad | Buenos Aires, Argentina</b></h4>
 						<p class="text-justify">Fundé NOTIBEACON junto a mi hermano en Junio del 2015. Esta empresa es la primer y única proveedora de iBeacons y Eddystone Beacons en Argentina y en Armérica latina. Trabajamos junto a "El Palacio de Hierro" en México y "DOT Baires Shopping" en Argentina y estamos trabajando constantemente con nuevos clientes que están interesados en la tecnología de localización en todo el mundo.<br>
 						Cree el sitio oficial de la empresa por cuenta propia, el cual pueden ver en "Notibeacon.com".<br>
 						Actualmente, estamos trabajando en mejorar la tecnología con tal de generar nuevas soluciones para nuestros clientes.</p>
@@ -74,20 +77,28 @@
 				<h2 class="light-dash">
 		  			Educación
 				</h2>
-				<p>
-					<i class="fa fa-fw fa-map-marker"></i> Ciudad: Ciudad Autónoma de Buenos Aires, Buenos Aires, Argentina
-					<br>
-					<i class="fa fa-fw fa-mobile"></i> Número de teléfono: 385-580-1837
-					<br>
-					<i class="fa fa-fw fa-envelope"></i> Correo electrónico: diaz.ailan.gonzalo@gmail.com
-				</p>
+				<br>
+				<div class="row" *ngFor="let school of education">
+					<div class="col-xs-2">
+						<img src="assets/img/{{school.img}}" class="img-circle shadow-2 full-width margin-top-20">
+					</div>
+					<div class="col-xs-10">
+						<h3><b>{{school.carreer}}</b></h3>
+						<h4><b>{{school.name}}</b></h4>
+						<h4><b>{{school.date}}</b></h4>
+						<ul>
+							<li *ngFor="let course of school.courses"><a *ngIf="course.certificate" href="{{course.certificate}}" target="_blank">{{course.name}}</a><p *ngIf="!course.certificate">{{course.name}}</p></li>
+						</ul>
+						<p class="text-justify">{{school.text}}</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="col-xs-6 col-sm-3 blue-bg profile-cover padding">
+		<!--<div class="col-xs-6 col-sm-3 blue-bg profile-cover padding">
 			<img src="assets/img/profile-pic.jpg" class="img-responsive img-circle center-block shadow-2">
 			<h3 class="text-center blue-bg">Gonzalo Díaz Ailán<br><small class="blue-bg">Co-fundador de NOTIBEACON<br>Desarrollador front-end</small></h3>
 			<br>
-		</div>
+		</div>-->
 	</div>
 	
 </div>
