@@ -30,6 +30,10 @@ body {
 	color: #96BEFB;
 }
 
+.dark-blue-dash {
+	border-bottom: solid 2px #2B4C7E;
+}
+
 .blue-font {
 	color: #567EBB;
 }
@@ -54,7 +58,7 @@ body {
 
 .light-bg {
 	background-color: #DCE0E6;
-	color: #1F1F20;
+	color: #2B4C7E;
 }
 
 .light-dash {
@@ -103,18 +107,40 @@ body {
 	top: -50%;
 }
 
-.max-width-100 {
-	max-width: 100px;
-}
-
 .full-width {
 	max-width: 100%;
 }
 
-.margin-top-20 {
-	margin-top: 20px;
+.margin-bottom-20 {
+	margin-bottom: 20px;
 }
 
 .progress-bar {
 	background-color: #2B4C7E;
+}
+
+.is-table {
+	display: block;
+}
+
+.is-table-col {
+	display:block;
+	vertical-align: top;
+	float: none;
+}
+
+.width-100px {
+	width: 100px;
+}
+
+@media(min-width: 768px) {
+
+	.is-table {
+		display:table;		
+	}
+
+	.is-table-col {
+		display:table-cell;
+	}
+
 }

@@ -20,7 +20,7 @@ export class AppComponent {
   	name: 'jQuery',
   	skill: 75
   },{
-  	name: 'SASS',
+  	name: 'Sass',
   	skill: 80
   },{
   	name: 'Bootstrap 3',
@@ -152,4 +152,9 @@ export class AppComponent {
   	}],
   	text: 'Con 28 materias aprobadas y 5 regularizadas tendría mucho que hablar al respecto, así que me limito a hablar de solo las materias que me parecen más destacables y haya aprobado. También fui ayudante de cátedra por un año en la materia de "Historia del Pensamiento Político y Jurídico".'
   }];
+
+  otherSkills = [{
+  	name: 'Piano',
+  	skill: ''
+  }]
 }
