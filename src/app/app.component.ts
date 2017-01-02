@@ -148,6 +148,8 @@ export class AppComponent {
   	},{
   		name: 'Derecho Constitucional'
   	},{
+  		name: 'Derecho del Usuario y del Consumidor'
+  	},{
   		name: 'Historia del Pensamiento Político y Jurídico (Ayudante de Cátedra)'
   	}],
   	text: 'Con 28 materias aprobadas y 5 regularizadas tendría mucho que hablar al respecto, así que me limito a hablar de solo las materias que me parecen más destacables y haya aprobado. También fui ayudante de cátedra por un año en la materia de "Historia del Pensamiento Político y Jurídico".'
