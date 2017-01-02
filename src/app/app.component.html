@@ -75,7 +75,7 @@
 					</div>
 				</div>-->
 				<div class="row">
-						<img src="assets/img/notibeacon-icon.jpg" class="img-circle shadow-2 width-100px pull-left margin">
+						<a href="http://notibeacon.com/" target="_blank"><img src="assets/img/notibeacon-icon.jpg" class="img-circle shadow-2 width-100px pull-left margin"></a>
 						<h3><a href="http://notibeacon.com/" target="_blank"><b>NOTIBEACON</b></a></h3>
 						<h4><b>Junio de 2015 - actualidad | Buenos Aires, Argentina</b></h4>
 					<div class="col-xs-12">
@@ -105,7 +105,7 @@
 						</div>
 					</div>-->
 					<div class="row margin-bottom-20" *ngFor="let school of education">
-							<img src="assets/img/{{school.img}}" class="img-circle shadow-2 width-100px pull-left margin">
+							<a href="{{school.url}}" target="_blank"><img src="assets/img/{{school.img}}" class="img-circle shadow-2 width-100px pull-left margin"></a>
 							<h3><b>{{school.carreer}}</b></h3>
 							<h4><a href="{{school.url}}" target="_blank"><b>{{school.name}}</b></a></h4>
 							<h4><b>{{school.date}}</b></h4>
